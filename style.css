@@ -1,60 +1,92 @@
 body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-image: url('https://source.unsplash.com/1600x900/?nature,technology');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
         }
 
         h1, h2 {
-            color: #333;
+            color: #ffffff;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         p {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 600px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
 
         img {
             margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
         }
 
         a {
             text-decoration: none;
-            color: #007bff;
+            color: #1e90ff;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #87cefa;
         }
 
         form {
-            margin-top: 20px;
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
         }
 
         input, textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            width: 80%;
-            max-width: 300px;
+            margin-bottom: 15px;
+            padding: 12px;
+            width: 90%;
+            max-width: 400px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
             box-sizing: border-box;
+            font-size: 16px;
         }
 
         input[type="submit"] {
-            background-color: #007bff;
+            background-color: #1e90ff;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 30px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #1c86ee;
         }
