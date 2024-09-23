@@ -123,19 +123,3 @@ body {
                 transform: translateY(0);
             }
         }
-
-        /* Адаптация для мобильных устройств */
-        @media screen and (max-width: 600px) {
-            img {
-                width: 100%;
-            }
-
-            a {
-                font-size: 16px;
-                padding: 8px 15px;
-            }
-
-            input, textarea {
-                width: 100%;
-            }
-        }
