@@ -46,7 +46,9 @@ body {
             transform: scale(1.05);
         }
 
-        a {
+        .instagram-link {
+            display: inline-flex;
+            align-items: center;
             text-decoration: none;
             color: #ffc966;
             font-weight: bold;
@@ -55,9 +57,16 @@ body {
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
             transition: background-color 0.3s ease;
+            margin-top: 10px;
         }
 
-        a:hover {
+        .instagram-link img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .instagram-link:hover {
             background-color: rgba(255, 201, 102, 0.7);
             color: #333;
         }
@@ -98,4 +107,42 @@ body {
 
         input[type="submit"]:hover {
             background-color: #f4b642;
+        }
+
+        /* Плавные анимации появления секций */
+        h1, h2, p, img, form {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        h1 {
+            animation-delay: 0.2s;
+        }
+
+        p, img, form, h2 {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Адаптация для мобильных устройств */
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+            }
+
+            .instagram-link {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+
+            input, textarea {
+                width: 100%;
+            }
         }
